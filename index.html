@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <!-- Gave an title of currency converter -->
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+ />
+   <!-- //I have linked style.css as stylesheet in html file -->
+ <body>
+    <!-- Indside our body tag we have created multiple divs -->
+    
+    <div class="container">
+        <!-- we started with div container which contains most part of the website -->
+        <h2>Currency Converter</h2>
+        <!-- Now added currency converter as h2 as I think this heading size would be apt  -->
+        <form>
+            <!-- We started by creating a form which will allow us to enter the amount we want to convert -->
+            <div class="amount">
+                <!-- In class amount we have made an input box which will allow us to enter the value. -->
+                <p>Enter Amount</p>
+                <input value="1" type="text" />
+            </div>
+            <div class="dropdown">
+                <!-- In this dropdown we will select the country from and to which the currency you need to convert -->
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="Flag">
+                        <!-- Here we have added the image of the flag of the converter -->
+                        <select name="from"></select>
+                        <!-- This select tag will select the country from -->
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="Flag">
+                        <!-- Same process is repeated for the to flag  -->
+                        <select name="to"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">1USD = 80INR</div>
+            <!-- In this message class we will finally display the message containing the final output. -->
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <!-- Here we have added codes.js which contains country codes of all the flags and inside it are the stored currency codes. -->
+    <script src="app.js"></script>
+    <!-- Here we have added app.js for the functionality of the converters -->
+ </body>
+</html>
+            
